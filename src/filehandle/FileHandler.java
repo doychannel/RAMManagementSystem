@@ -1,6 +1,7 @@
 package filehandle;
 
 import java.io.*;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -26,8 +27,8 @@ public class FileHandler {
             FileOutputStream fos = new FileOutputStream(fo);
             ObjectOutputStream oos = new ObjectOutputStream(fos);
             
-            
-            oos.writeObject(ramList);
+            for (RAM r:ramList)
+            oos.writeObject(r);
 
             oos.close();
             fos.close();
@@ -41,6 +42,7 @@ public class FileHandler {
     }
 
     public List<RAM> loadFromFile() {
+        ArrayList <RAM> ramL=new ArrayList();
         File file = new File(pathFile);
         if (!file.exists()) {
             System.out.println("FIle not found.");
@@ -48,7 +50,11 @@ public class FileHandler {
         }
 
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(file))) {
-            return (List<RAM>) ois.readObject();
+            RAM r;
+            while((r=(RAM) ois.readObject())!=null)
+                ramL.add(r);
+            
+            return ramL;
             
         } catch (IOException | ClassNotFoundException e) {
             System.out.println("Error loading data " );
