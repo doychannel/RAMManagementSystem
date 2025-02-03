@@ -1,4 +1,5 @@
 _**Title**_
+
 **Laptop RAM Management.**
 
 _**Preface:**_
@@ -49,7 +50,7 @@ Each menu choice should invoke an appropriate function to perform the selected m
 program must display the menu after each task and wait for the user to select another option until
 the user chooses to quit the program.
 
-_Additional Considerations:_
+**_Additional Considerations:_**
 
 - User Experience: Ensure the program is user-friendly, with clear instructions and error
 messages.
@@ -72,7 +73,7 @@ and how it meets the project requirements.
 
 ========================
 BUILD OUTPUT DESCRIPTION
-========================
+
 
 When you build an Java application project that has a main class, the IDE
 automatically copies all of the JAR
