@@ -1,16 +1,19 @@
-Title
-Laptop RAM Management.
+_**Title**_
+**Laptop RAM Management.**
 
-Preface: This is the second OOP project for the subject LAB211 at my uni. It offers me an insight into saving data as a binary file.
+_**Preface:**_
+
+This is the second OOP project for the subject LAB211 at my uni. It offers me an insight into saving data as a binary file.
 Furthermore, generating code numerically is also applied to index each element of the same model type.
 
-Background
+_**Background**_
+
 A computer shop specializes in managing laptop RAM. The shop organizes RAM modules by type (e.g., LPDDR5, DDR5, LPDDR4, DDR4...), and within each type, 
 RAM modules are further categorized by bus speed
 (e.g., 5600MHz, 4800MHz...). Finally, each bus speed category is sorted by brand. The shop requires a
 management system to efficiently handle the inventory of RAM modules.
 
-Program Specifications
+_**Program Specifications**_
 Build a management program. With the following basic functions
 
 1. Build Your Data Structure:
@@ -45,6 +48,25 @@ code, type, bus, brand, quantity, and production_month_year.
 Each menu choice should invoke an appropriate function to perform the selected menu item. Your
 program must display the menu after each task and wait for the user to select another option until
 the user chooses to quit the program.
+
+_Additional Considerations:_
+
+- User Experience: Ensure the program is user-friendly, with clear instructions and error
+messages.
+- Error Handling: Implement robust error handling to manage invalid inputs, file I/O errors,
+and ensure the system is reliable.
+- Extensibility: Design the system to allow for easy future enhancements, such as adding more
+attributes to RAM modules or expanding the search capabilities.
+Program Flow:
+- The program should display a menu after each task and wait for the user to select another option
+until they choose to exit.
+- Each menu choice should invoke the corresponding function to perform the selected operation.
+Final Notes:
+- Testing: Ensure the program is thoroughly tested, including edge cases like empty files, duplicate
+entries, and invalid input formats.
+- Documentation: Include clear comments and documentation to explain how the program works
+and how it meets the project requirements.
+
 
 **Besides, I want to extend my gratitude to Nguyen Nhat Thong for offering me the software structure and code generation idea. Without his support, I cannot make this far!**
 
